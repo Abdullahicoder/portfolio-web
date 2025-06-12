@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'portfolio-web';
-
 const nextConfig = {
-  // Enable static HTML export
-  output: 'export',
-  // Ensure trailing slashes for GitHub Pages routing
-  trailingSlash: true,
-  // If in production, set basePath and assetPrefix to the repo name
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
+  // Remove 'output: 'export'' as it's not compatible with Server Actions
+  // Remove 'trailingSlash', 'basePath', and 'assetPrefix' as they are specific to static export to subpaths
 
   images: {
     remotePatterns: [
@@ -20,6 +12,7 @@ const nextConfig = {
     ],
   },
   experimental: {
+    // Re-enable serverActions to allow them to compile and run
     serverActions: true,
   },
 };
