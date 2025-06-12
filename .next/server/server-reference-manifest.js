@@ -1,1 +1,1 @@
-self.__RSC_SERVER_MANIFEST="{\n  \"node\": {},\n  \"edge\": {}\n}"
+self.__RSC_SERVER_MANIFEST="{\n  \"node\": {\n    \"0998887d8b51ae3caf32daaaf0e050cdb2a0a959\": {\n      \"workers\": {\n        \"app/page\": \"(sc_action)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabdullaahiali%2Fportfolio-web%2Factions%2FsendEmail.ts%22%2C%5B%22sendEmail%22%5D%5D%5D&__client_imported__=true!\"\n      },\n      \"layer\": {\n        \"app/page\": \"sc_action\"\n      }\n    }\n  },\n  \"edge\": {}\n}"
