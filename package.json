@@ -1,7 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Abdullahicoder.github.io/portfolio-web",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
